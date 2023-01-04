@@ -1,20 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&display=swap');
 
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(218, 22%, 67%);
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.contaner {
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr 1fr;
+    width: 80%;
+    height: 90%;
+    
+}
+
+.sction {
+    padding: 1rem;
+}
+.sction:first-child  {
+    border-radius: 10px 10px 0 0;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    color: hsl(179, 62%, 43%);
+    background-color: white;
+}
+.block {
+    display: block;
+}
+.header {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    font-weight: 700;
+}
+.notice {
+    
+    
+    height: 40%;
+    display: flex;
+    align-items: center;
+    color: hsl(71, 73%, 54%);
+    padding-right: 3rem;
+    text-align: start;
+}
+
+.article {
+   
+    height: 60%;
+    color: hsl(204, 43%, 85%);
+}
+.article article {
+    padding-right: 1rem;
+}
+.sction:nth-child(2) {
+    padding-bottom: 2rem;
+    color: white;
+    background-color: hsl(179, 62%, 43%);
+}
+.price {
+    gap: 10px;
+    height: 40%;
+    display: flex;
+    align-items: center;
+
+}
+.price span {
+    color: hsl(179, 62%, 70%);
+}
+.buttion {
+    margin-top: 2%;
+    height: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
 
 
+.buttion button {
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+}
+.sction:last-child {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 2rem;
+    color: white;
+    background-color: hsl(179, 62%, 63%);
+}
+.offers {
+    color: hsl(204, 43%, 85%);
+}
+li {
+    padding-top: 2px;
+    font-size: 14px;
+    list-style: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 37rem) {
+    .contaner {
+        width: 70%;
+        height: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    } 
+    .sction:first-child {
+        grid-column: span 2;    
+    }
+    .article article {
+        padding-right: 21rem;
+        text-align: start;
+    }
+    .sction:nth-child(2) {
+        border-radius: 0 0 0 12px;
+    }
+    .sction:last-child {
+        border-radius: 0 0 12px 0;
+    }
+}
 
 
 
